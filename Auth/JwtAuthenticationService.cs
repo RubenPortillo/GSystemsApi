@@ -39,7 +39,7 @@ namespace GSystemsApi.Auth
                 {
                     new Claim(ClaimTypes.Email, mail)
                 }),
-                Expires = DateTime.Now.AddMinutes(1),
+                Expires = DateTime.Now.AddMinutes(5),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(tokenKey), SecurityAlgorithms.HmacSha256Signature)
             };
 
