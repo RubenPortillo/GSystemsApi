@@ -89,7 +89,7 @@ namespace GSystemsApi.Controllers
 
         // DELETE: api/tareas/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteTarea(Guid id)
+        public async Task<IActionResult> DeleteTarea(int id)
         {
             var tarea = await _context.Tarea.FindAsync(id);
             if (tarea == null)

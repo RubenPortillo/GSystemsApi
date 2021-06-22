@@ -65,8 +65,10 @@ namespace GSystemsApi
                         ValidateAudience = false,
                         ValidateIssuerSigningKey = true,
                         ValidateIssuer = false,
-                        RequireExpirationTime = false,
-                        ValidateLifetime = true
+                        RequireExpirationTime = true,
+                        ValidateLifetime = true,
+                        
+                        
                     };
                 });
             services.AddAuthorization();

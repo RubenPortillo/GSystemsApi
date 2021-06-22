@@ -73,7 +73,7 @@ namespace GSystemsApi.Controllers
                 }
             }
 
-            return NoContent();
+            return Ok();
         }
 
         // POST: api/empresa
@@ -89,7 +89,7 @@ namespace GSystemsApi.Controllers
 
         // DELETE: api/empresa/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteEmpresa(Guid id)
+        public async Task<IActionResult> DeleteEmpresa(int id)
         {
             var empresa = await _context.Empresa.FindAsync(id);
             if (empresa == null)
@@ -100,7 +100,7 @@ namespace GSystemsApi.Controllers
             _context.Empresa.Remove(empresa);
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return Ok();
         }
 
         private bool EmpresaExists(int id)

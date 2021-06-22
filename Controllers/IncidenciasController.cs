@@ -90,7 +90,7 @@ namespace GSystemsApi.Controllers
                 }
             }
 
-            return NoContent();
+            return Ok();
         }
 
         // POST: api/incidencias
@@ -117,7 +117,7 @@ namespace GSystemsApi.Controllers
             _context.Incidencia.Remove(incidencia);
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return Ok();
         }
 
         private bool IncidenciaExists(int id)

@@ -74,7 +74,7 @@ namespace GSystemsApi.Controllers
                 }
             }
 
-            return NoContent();
+            return Ok();
         }
 
         // POST: api/empleados
@@ -101,7 +101,7 @@ namespace GSystemsApi.Controllers
             _context.Empleado.Remove(empleado);
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return Ok();
         }
 
         private bool EmpleadoExists(int id)
