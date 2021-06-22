@@ -1,7 +1,7 @@
 # GSystemsApi
 Servicio Rest para la gestión de las incidencias de los empleados.
 
-## Cofiguración
+## Configuración
 No se requiere configuración previa.
 
 ## Ejecución
@@ -54,11 +54,11 @@ OPERACION /api/XXXXX
 
 Se trata de un CRUD para las operaciones de los empleados sobre el path 'api/empleados'
 
-- POST '/api/empleados/'. Añade un nuevo Usuario
-- DELETE '/api/empleados/{id}'. Elimina un usuario existente.
-- PUT '/api/empleados/{id}'. Modifica un usuario existente.
-- GET '/api/empleados/'. Obtiene todos los usuarios.
-- GET '/api/empleados/{id}'. Obtiene el usuario filtrando por ID.
+- POST '/api/empleados/'. Añade un nuevo empleado
+- DELETE '/api/empleados/{id}'. Elimina un empleado existente.
+- PUT '/api/empleados/{id}'. Modifica un empleado existente.
+- GET '/api/empleados/'. Obtiene todos los empleado.
+- GET '/api/empleados/{id}'. Obtiene el empleado filtrando por ID.
 
 Estructura del JSON:
 ```json
