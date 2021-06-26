@@ -2,7 +2,10 @@
 Servicio Rest para la gestión de las incidencias de los empleados.
 
 ## Configuración
-No se requiere configuración previa.
+Para inicializar la Base de Datos, hará falta ejecutar el comando "update-database" en la "Consola del Administrador de paquetes", esto creará la base de datos y datos de prueba.
+
+ ![alt text](https://github.com/RubenPortillo/GSystemsApi/blob/master/Properties/imgReader/img_api1.jpg)
+ 
 
 ## Ejecución
 Para poder ejecutar la aplicación solo será necesario descargar la solución y levantar un IISExpress desde Visual Studio.
